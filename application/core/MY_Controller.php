@@ -13,9 +13,6 @@ class MY_Controller extends CI_Controller {
 			'session'
 		);
 		$this->load->library($library);
-
-
-
 	}
 
 	/*
@@ -30,4 +27,6 @@ class MY_Controller extends CI_Controller {
 		(!isset($data['footer'])) ? $contents['footer'] = null : $contents['footer'] = $data['footer'] ;
 		$this->load->view("template", $contents);
 	}
+
+	
 }

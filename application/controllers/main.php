@@ -24,6 +24,7 @@ class Main extends MY_Controller {
 	}
 
 	public function users($offset = 0) {
+		if (!is_logged()) redirect(base_url());
 		$limit = 2;
 		$data['header']['title'] = "Users Page";
 
