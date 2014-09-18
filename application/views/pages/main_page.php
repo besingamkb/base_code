@@ -1,0 +1,1 @@
+<?php echo user_meta('is_active'); ?>
